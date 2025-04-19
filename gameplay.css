@@ -69,6 +69,10 @@ header{
     align-items: center;
     background-color: #f52d73;
     border-radius: 7px;
+    transition: 0.2s;
+}
+.login:hover{
+    background-color: white;
 }
 .btn{
     padding: 0.5rem 0.5rem;
@@ -76,11 +80,88 @@ header{
     border-radius: 5px;
     background-color:#f52d73;
     font-family: "Quicksand",sans-serif;
+    transition: 0.2s;
 }
-.login:hover{
-    background-color: #f52d73;
+.btn:hover{
+    background-color: white;
     border-radius: 5px;
 }
+/* CSS DE LA PAGE MAIN */
+
+.main{
+    width:80vw;
+    background-color: #27292a;
+    height: 87vh;
+    display: flex;
+    margin: auto;
+    margin-top: 25px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    flex-wrap: wrap;
+}
+.main_container{
+    width: 70vw;
+    height: 65vh;
+    margin: auto;
+    border-radius:20px;
+    display: flex;
+    margin-top: 40px;
+    background-image: url(./banner-bg.jpg);
+    background-repeat: no-repeat;
+}
+.container_right{
+    width: 55vw;
+    height: 65vh;
+  /*   align-items: center;
+    justify-content: center; */
+    margin: auto;
+}
+
+.container_right_p{
+    color: white;
+    margin-top: 70px;
+    font-size: 20px;
+    font-family:"Quicksand" ,sans-serif;
+}
+.container_right>b{
+    color: white;
+    text-transform: uppercase;
+    font-size:35px;
+    line-height: 1.5;
+}
+.container_right span{
+    color: #e75e8d;
+}
+
+.container_p{
+    color: white;
+}
+.main_testing{
+    width: 50vw;
+    height: 15vh;
+    margin: auto;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    margin-top: -65px;
+}
+.main_testing button{
+    margin-top: 22px;
+    padding: 1rem 3rem;
+    margin-left:38px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size:15;
+   font-family:"Quicksand",sans-serif;
+   border: 2px solid #f52d73;
+   border-bottom: 6px solid #f52d73;
+}
+
+.main_testing button:hover{
+    translate:0px -5px;
+}
+
 /*Dark-Mode*/
 .changeTheme{
     width:70px;
