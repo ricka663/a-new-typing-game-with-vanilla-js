@@ -20,18 +20,49 @@
             </h1>
             <div class="dark_theme">
                 <label class="changeTheme">
-                    <input type="checkbox" name="cahngeTheme" >
+                    <input type="checkbox" name="cahngeTheme">
                 </label>
-                <div class="login">
-                    <div class="navbar_left_content"></div>
-                    <input type="button" value="Se connecter" class="btn">
-                    <img src="./smile-5865208_960_720.webp" alt=""class="img-login">
-                </div>
             </div>
         </nav>
     </header>
-    <script src="script.js" defer>
-      
-    </script>
+
+            <div class="mode-selector">
+                <label for="mode">Mode:</label>
+                <select id="mode">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+
+    <div class="container">
+        <div class="stats">
+            <div class="stat-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <span id="wpm">0</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-check"></i>
+                <span id="accuracy">0</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-clock"></i>
+            </div>
+            <div class="stat-item" id="setting">
+                <i class="fas fa-cog"></i>
+            </div>
+        </div>
+
+        <main>
+            <div id="word-display" class="word-display"></div>
+            <input type="text" id="input-field" autofocus>
+            <div class="results">
+                <p id="results">Résultats : </p>
+                <div id="word-display" class="word-display"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
